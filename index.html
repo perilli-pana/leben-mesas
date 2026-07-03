@@ -8,15 +8,15 @@
   :root{
     --bg:#eef0f2; --panel:#ffffff; --ink:#25292e; --muted:#7a828c;
     --line:#dfe3e8; --brand:#f08a24; --brand2:#3b414a;
-    --free:#f0f2f4; --free-b:#c2c8cf;
-    --busy:#fdeede; --busy-b:#f08a24;
-    --pay:#fff6df; --pay-b:#e0a52d;
+    --free:#dff5e4; --free-b:#2ea34f;
+    --busy:#fbe0dd; --busy-b:#e03b2b;
+    --pay:#dde8fb; --pay-b:#2f6fe0;
     --shadow:0 4px 16px rgba(0,0,0,.08);
   }
   html[data-theme="dark"]{
     --bg:#14171b; --panel:#1c2127; --ink:#eef1f5; --muted:#98a2ae;
-    --line:#2b323b; --free:#232830; --free-b:#3a424c;
-    --busy:#3a2413; --busy-b:#f08a24; --pay:#332a12; --pay-b:#e0a52d;
+    --line:#2b323b; --free:#183a24; --free-b:#33b158;
+    --busy:#3f1c17; --busy-b:#e8483a; --pay:#16294a; --pay-b:#4d84e6;
     --shadow:0 4px 16px rgba(0,0,0,.4);
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -44,7 +44,7 @@
   .sala-tabs .st.active{background:var(--bg);color:var(--ink);border-color:var(--line)}
   .sala-tabs .st.add{color:var(--brand)}
 
-  #map{position:relative;flex:1;overflow:auto;
+  #map{position:absolute;inset:0;overflow:auto;
     background-image:radial-gradient(var(--line) 1.2px,transparent 1.2px);background-size:28px 28px}
   .table{position:absolute;width:66px;height:66px;border-radius:12px;
     display:flex;flex-direction:column;align-items:center;justify-content:center;
